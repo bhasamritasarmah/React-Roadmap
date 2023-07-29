@@ -1,0 +1,103 @@
+<!-- This is the fifth day of learning HTML formally, and 
+     I am learning about CSS, Links, and Images in HTML from w3schools website. -->
+
+
+<!DOCTYPE html>
+<html lang="en-IN">
+    <head>
+        <title>
+            This is my third day of learning HTML formally.
+        </title>
+        <style>
+            body {
+                background-color:black;
+                color: #efefef;
+            }
+        </style>
+        <link rel="stylesheet" href="day5_styles.css">
+    </head>
+
+    <body>
+        <h1>
+            Fifth Day of Learning HTML
+        </h1>
+
+        <p>
+            Contents of the Page - <br>
+            <a href="#HTMLandCSS">Jump to HTML and CSS section</a> <br>
+            <a href="#HTMLlinks">Jump to HTML Links section</a> <br>
+            <a href="#HTMLimages">Jump to HTML Images</a>
+        </p>
+
+        <h3 id="HTMLandCSS">HTML and CSS</h3>
+        <p>
+            Cascading Style Sheets (CSS) is used to format the layout of a webpage. The word <b>cascading</b>
+            means that the style applied to a parent element will also be applied to all the child elements,
+            unless different style has been applied to them.
+        </p>
+
+        <p>
+            CSS can be added to HTML documents in 3 ways - <br>
+            <b>Inline:</b> By using style attribute inside HTML elements. <br>
+            <b>Internal:</b> By using a &lt;style&gt; element in the &lt;head&gt; section. <br>
+            <b>External:</b> By using a &lt;link&gt; element to link to an external CSS file. <br>
+        </p>
+
+        <p style="color:aquamarine;">
+            In this paragraph, I am using inline CSS to change to color of this text to aquamarine, 
+            using the color property of CSS in the style attribute. <br>
+            I am using internal CSS by adding the style element inside the &lt;head&gt; section. I have
+            mentioned the background-color of the webpage to be lightgoldenrodyellow there. <br>
+            I am using external CSS file by adding several styles in the day5_styles.css
+            file available in the same folder, and linking that file here in the &lt;head&gt; section.
+        </p>
+
+        <p>
+            The CSS <b>border</b> property defines a border around an HTML element. <br>
+            The CSS <b>padding</b> property defines a padding (space) between the text and the border. <br>
+            The CSS <b>margin</b> property defines a margin space outside the border.
+        </p>
+
+        <h3 id="HTMLlinks">HTML Links</h3>
+        <p>
+            <a href="day4_index.html" target="_blank">Click here</a> to visit the HTML page created on
+            Day 4 of my HTML learning. It will open in a new browser window. <br>
+
+            <a href="images/">
+                <img src="images/tiger.jpg" alt="Royal Bengal Tiger" height="200px" width="300px"
+                 style="float: right">
+            </a> <br>
+            Here, I am displaying the image of the tiger as a link. <br>
+
+            <button onclick="document.location='day3_index.html'">Click here</button> to go to the page
+            created on Day 3 of my HTML learning. <br>
+
+            The id attribute is used to define the bookmarks in a page, when it is long.
+        </p>
+
+        <h3 id="HTMLimages">HTML Images</h3>
+        <p>
+            <img src="https://media.giphy.com/media/AWNxDbtHGIJDW/giphy.gif" alt="Winking Smiley"
+             style="height:300px; width:300px">
+
+            <img src="images/beautiful_nature.avif" alt="The Beauty of Nature"
+             style="float: left; height: 300px; width: 400px;">
+
+            <img src="images/fantasy_girl.jpg" alt="Galadriel"
+             style="float: right; height: 300px; width: 400px;">
+        </p>
+
+        <address>
+            Written by: Bhasamrita Sarmah <br>
+            Visit me at: <br>
+            <a href="https://weirdthoughtsthatgowild.blogspot.com/" target="_blank">
+                My Blog
+            </a> <br>
+            Or reach me at: <br>
+            <a href="mailto:bhasamritasarmah@gmail.com">
+                My email id.
+            </a>
+        </address>
+
+    </body>
+</html>
