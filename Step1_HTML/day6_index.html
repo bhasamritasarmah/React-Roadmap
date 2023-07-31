@@ -1,0 +1,104 @@
+<!-- This is the sixth day of learning HTML formally, and I learnt about 
+     Image Maps, Background Images, Picture element, Favicon, and Page Title 
+     in HTML from w3schools website. -->
+
+<!DOCTYPE html>
+<html lang="en-IN">
+    <head>
+        <title>
+            HTML Tutorial: Day 6
+        </title>
+        <link rel="icon" type="image/x-icon" href="images/icon.jpg">
+        <style>
+            body {
+                background-color:black;
+                color: black;
+            }
+        </style>
+        <link rel="stylesheet" href="day6_styles.css">
+    </head>
+
+    <body>
+        <h1>
+            Sixth Day of Learning HTML
+        </h1>
+
+        <p style="text-align: center;">
+            Contents of the Page - <br>
+            Jump to <a href="#ImageMaps">Image Maps</a> <br>
+            Jump to <a href="#BackgroundImage">Background Image</a> <br>
+            Jump to <a href="#Pictures">Pictures in HTML</a> <br>
+            Jump to <a href="#Favicon">Favicons in HTML</a> <br>
+            Jump to <a href="#PageTitle">HTML Page Titles</a> <br>
+        </p>
+
+        <h3 id="#ImageMaps">Image Maps</h3>
+        <p>
+            The HTML &lt;map&gt; tag defines an image map, which is an image with clickable areas.
+            The areas are defined with one or more &lt;area&gt; tags. <br>
+
+            <img src="images/workplace.jpg" alt="Workplace" usemap="#workplaceMap">
+            
+            <map name="#workplaceMap">
+                <area shape="rect" coords="34,44,270,350" alt="Computer" 
+                 href="https://en.wikipedia.org/wiki/Computer" target="_blank">
+                <area shape="rect" coords="290,172,333,250" alt="Mobile Phone" 
+                 href="https://en.wikipedia.org/wiki/Mobile_phone" target="_blank">
+                <area shape="circle" coords="337,300,44" alt="Coffee" 
+                 href="https://en.wikipedia.org/wiki/Coffee" target="_blank">
+            </map>
+        </p>
+
+        <h3 id="#BackgroundImage">Background Image</h3>
+        <p>
+            The background-repeat property with the value no-repeat, ensures that the background image will
+            not repeat itself. <br>
+            The background-size property with the value cover, ensures that the image covers the
+            whole element. <br>
+            The background-attachment property with the value fixed, ensures that the entire element always
+            remains covered, no matter what the size of the window. <br>
+        </p>
+
+        <h3 id="#Pictures">Pictures in HTML</h3>
+        <p>
+            The HTML &lt;picture&gt; element allows to display different pictures for different devices or
+            screen sizes. Also, in the case where browsers may not recognise all types of picture formats,
+            using &lt;picture&gt; tag, one can add images of all formats, so that the browser uses the first
+            format it recognises.
+
+            <picture>
+                <source srcset="images/beautiful_nature.avif">
+                <source srcset="images/tiger.jpg">
+                <img src="images/workplace.jpg" alt="Workplace" style="height: 600px; width: 1200px;">
+            </picture>
+        </p>
+
+        <h3 id="#Favicon">Favicons in HTML</h3>
+        <p>
+            A favicon is a small image displayed to the left of the page title in the browser tab.
+        </p>
+
+        <h3 id="#PageTitle">HTML Page Title</h3>
+        <p>
+            The title is shown in the browser's title bar and should describe the content and the
+            meaning of the page. Title page is very important for Search Engine Optimisation (SEO).
+            The &lt;title&gt; element - <br>
+            defines a title in the browser toolbar <br>
+            provides a title for the page when it is added to favourites <br>
+            displays a title for the page in search engine results.
+        </p>
+
+        <address>
+            Written by: Bhasamrita Sarmah <br>
+            Visit me at: <br>
+            <a href="https://weirdthoughtsthatgowild.blogspot.com/" target="_blank">
+                My Blog
+            </a> <br>
+            Or reach me at: <br>
+            <a href="mailto:bhasamritasarmah@gmail.com">
+                My email id.
+            </a>
+        </address>
+
+    </body>
+</html>
