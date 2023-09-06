@@ -1,0 +1,100 @@
+<!-- This is the seventh day of learning HTML formally, and I learnt about 
+     HTML Tables, Table Borders (till just before style table borders)
+     in HTML from w3schools website. -->
+
+<!DOCTYPE html>
+<html lang="en-IN">
+    <head>
+        <title>
+            HTML Tutorial: Day 7
+        </title>
+        <link rel="icon" type="image/x-icon" href="images/icon.jpg">
+        <link rel="stylesheet" href="day7_styles.css">
+    </head>
+
+    <body>
+        <h1>
+            Seventh Day of Learning HTML
+        </h1>
+
+        <p style="text-align: center;">
+            Contents of the Page - <br>
+            <a href="#Tables">Jump to HTML Tables</a> <br>
+            <a href="#TableBorders">Jump to Table Borders</a> <br>
+        </p>
+
+        <h3 id="#Tables">HTML Tables</h3>
+        <p>
+            HTML tables allow web developers to arrange data into rows and columns. <br>
+            Each table cell is defined by a &lt;td&gt; and a &lt;/td&gt; tag, where
+            td stands for table data. <br>
+            Each row starts with a &lt;tr&gt; and ends with a &lt;/tr&gt; tag, where
+            tr stands for table row. <br>
+            Table header cells are defined by a &lt;th&gt; and a &lt;/th&gt; tag, where
+            th stands for table header. <br>
+            A table can contain all sorts of HTML elements like -
+            <ul>
+                <li>text</li>
+                <li>images</li>
+                <li>lists</li>
+                <li>links</li>
+                <li>other tables, and so on.</li>
+            </ul>
+            Below is a simple table in HTML - 
+            <table style="border-color: black;">
+                <tr>
+                    <th>Player Name</th>
+                    <th>Country</th>
+                    <th>Sports Name</th>
+                </tr>
+                <tr>
+                    <td>Lionel Messi</td>
+                    <td>Argentina</td>
+                    <td>Football</td>
+                </tr>
+                <tr>
+                    <td>Sania Mirza</td>
+                    <td>India</td>
+                    <td>Tennis</td>
+                </tr>
+            </table>
+        </p>
+        
+        <h3 id="#TableBorders">Table Borders</h3>
+        <p>
+            In the above table, I have added a border using the CSS property <i>border</i>. <br>
+            In order to avoid having double borders like in the table above, in the table below
+            I am using the CSS property <i>border-collapse</i>. <br>
+            <table style="border-collapse: collapse;">
+                <tr>
+                    <th>Player Name</th>
+                    <th>Country</th>
+                    <th>Sports Name</th>
+                </tr>
+                <tr>
+                    <td>Lionel Messi</td>
+                    <td>Argentina</td>
+                    <td>Football</td>
+                </tr>
+                <tr>
+                    <td>Sania Mirza</td>
+                    <td>India</td>
+                    <td>Tennis</td>
+                </tr>
+            </table>
+        </p>
+          
+        <address>
+            Written by: Bhasamrita Sarmah <br>
+            Visit me at: <br>
+            <a href="https://weirdthoughtsthatgowild.blogspot.com/" target="_blank">
+                My Blog
+            </a> <br>
+            Or reach me at: <br>
+            <a href="mailto:bhasamritasarmah@gmail.com">
+                My email id.
+            </a>
+        </address>
+
+    </body>
+</html>
