@@ -1,0 +1,97 @@
+<!-- This is the eighth day of learning HTML formally, and I learnt about 
+     HTML Table Sizes and Table Headers in the second part of today's sheet
+     from w3schools website. -->
+
+<!DOCTYPE html>
+<html lang="en-IN">
+    <head>
+        <title>
+            HTML Tutorial: Day 8
+        </title>
+        <link rel="icon" type="image/x-icon" href="images/icon.jpg">
+        <link rel="stylesheet" href="day8_2_styles.css">
+    </head>
+
+    <body>
+        <h1>
+            Eighth Day of Learning HTML
+        </h1>
+
+        <p style="text-align: center;">
+            Contents of the Page - <br>
+            <a href="#TableSizes">Jump to Table Sizes</a> <br>
+        </p>
+
+        <h3 id="#TableSizes">Table Sizes</h3>
+        <p>
+            HTML tables can have different sizes for each row, column, or the entire table.
+            The HTML <i>style</i> attribute can be used with CSS properties <i>width</i> and
+            <i>height</i> to specify the size of a table, row, or column. Using a percentage
+            as a size unit for a width means how wide this element would be compared to its
+            parent element. In the case, the parent element of &lt;table&gt; is &lt;body&gt;.
+            The width of table is marked as 100%. To set the size of a specific column, style
+            attribute is added to the &lt;th&gt; or &lt;td&gt; element. To set the height of a
+            specific row, style attribute is is added to a specific row. Table headers are defined
+            with &lt;th&gt; elements. 
+            <table>
+                <tr>
+                    <th style="width: 70%;">Player Name</th>
+                    <th>Country</th>
+                    <th>Sports Name</th>
+                </tr>
+                <tr style="height: 200px;">
+                    <td>Lionel Messi</td>
+                    <td>Argentina</td>
+                    <td>Football</td>
+                </tr>
+                <tr>
+                    <td>Sania Mirza</td>
+                    <td>India</td>
+                    <td>Tennis</td>
+                </tr>
+            </table>
+            <br>
+        </p>
+
+        <h3 id="#TableHeaders">Table Headers</h3>
+        <p>
+            By default table headers are bold and centered, but that can
+            be changed with the CSS property text-align. A header can span two or more columns
+            with the use of the HTML colspan attribute. The &lt;caption&gt; tag, inserted immediately
+            after the &lt;table&gt; tag, is used to add caption to a table.
+            <table>
+                <caption>Famous Players and their Countries</caption>
+                <tr>
+                    <th style="width: 70%; text-align: center;" colspan="2">Player Name</th>
+                    <th>Country</th>
+                    <th>Sports Name</th>
+                </tr>
+                <tr style="height: 200px;">
+                    <td>Lionel</td>
+                    <td>Messi</td>
+                    <td>Argentina</td>
+                    <td>Football</td>
+                </tr>
+                <tr>
+                    <td>Sania</td>
+                    <td>Mirza</td>
+                    <td>India</td>
+                    <td>Tennis</td>
+                </tr>
+            </table>
+        </p>
+          
+        <address>
+            Written by: Bhasamrita Sarmah <br>
+            Visit me at: <br>
+            <a href="https://weirdthoughtsthatgowild.blogspot.com/" target="_blank">
+                My Blog
+            </a> <br>
+            Or reach me at: <br>
+            <a href="mailto:bhasamritasarmah@gmail.com">
+                My email id.
+            </a>
+        </address>
+
+    </body>
+</html>
