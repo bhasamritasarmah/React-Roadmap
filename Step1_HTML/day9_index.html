@@ -1,46 +1,41 @@
-<!-- This is the eighth day of learning HTML formally, and I learnt about 
-     HTML Table Sizes and Table Headers in the second part of today's sheet
+<!-- This is the ninth day of learning HTML formally, and I learnt about 
+     HTML Table Padding and Spacing, Col and Row Span
      from w3schools website. -->
 
 <!DOCTYPE html>
 <html lang="en-IN">
     <head>
         <title>
-            HTML Tutorial: Day 8
+            HTML Tutorial: Day 9
         </title>
         <link rel="icon" type="image/x-icon" href="images/icon.jpg">
-        <link rel="stylesheet" href="day8_2_styles.css">
+        <link rel="stylesheet" href="day9_styles.css">
     </head>
 
     <body>
         <h1>
-            Eighth Day of Learning HTML
+            Ninth Day of Learning HTML
         </h1>
 
         <p style="text-align: center;">
             Contents of the Page - <br>
-            <a href="#TableSizes">Jump to Table Sizes</a> <br>
-            <a href="#TableHeaders">Jump to Table Headers</a> <br>
+            <a href="#PaddingAndSpacing">Jump to Table Padding and Spacing</a> <br>
+            <a href="#RowspanAndColspan">Jump to Table Rowspan and Colspan</a> <br>
         </p>
 
-        <h3 id="#TableSizes">Table Sizes</h3>
+        <h3 id="#PaddingAndSpacing">Table Padding and Spacing</h3>
         <p>
-            HTML tables can have different sizes for each row, column, or the entire table.
-            The HTML <i>style</i> attribute can be used with CSS properties <i>width</i> and
-            <i>height</i> to specify the size of a table, row, or column. Using a percentage
-            as a size unit for a width means how wide this element would be compared to its
-            parent element. In the case, the parent element of &lt;table&gt; is &lt;body&gt;.
-            The width of table is marked as 100%. To set the size of a specific column, style
-            attribute is added to the &lt;th&gt; or &lt;td&gt; element. To set the height of a
-            specific row, style attribute is is added to a specific row. Table headers are defined
-            with &lt;th&gt; elements. 
+            HTML tables can adjust the padding inside the cells, and also the space between the cells.
+            Cell padding is the space between the cell edges and the cell content. By default, the padding
+            is set to 0. <br>
+            Cell spacing is the spacing between each cell. By default, the space is set to 2px.
             <table>
                 <tr>
-                    <th style="width: 70%;">Player Name</th>
+                    <th>Player Name</th>
                     <th>Country</th>
                     <th>Sports Name</th>
                 </tr>
-                <tr style="height: 200px;">
+                <tr">
                     <td>Lionel Messi</td>
                     <td>Argentina</td>
                     <td>Football</td>
@@ -54,18 +49,22 @@
             <br>
         </p>
 
-        <h3 id="#TableHeaders">Table Headers</h3>
+        <h3 id="#RowspanAndColspan">Table Rowspan and Colspan</h3>
         <p>
-            By default table headers are bold and centered, but that can
-            be changed with the CSS property text-align. A header can span two or more columns
-            with the use of the HTML colspan attribute. The &lt;caption&gt; tag, inserted immediately
-            after the &lt;table&gt; tag, is used to add caption to a table.
+            HTML tables have cells that can span over multiple rows or columns. To make a cell span over
+            multiple columns, use the colspan attribute. To make a cell span over multiple rows, use the
+            rowspan attribute. The values of the colspan and the rowspan represents
+            the number of columns and rows to span, respectively.
             <table>
                 <caption>Famous Players and their Countries</caption>
                 <tr>
                     <th style="width: 70%; text-align: center;" colspan="2">Player Name</th>
-                    <th>Country</th>
-                    <th>Sports Name</th>
+                    <th rowspan="2">Country</th>
+                    <th rowspan="2">Sports Name</th>
+                </tr>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
                 </tr>
                 <tr style="height: 200px;">
                     <td>Lionel</td>
@@ -80,6 +79,14 @@
                     <td>Tennis</td>
                 </tr>
             </table>
+        </p>
+
+        <p>
+            <em>
+                <b>Note:</b> The &lt;h3&gt; tag with the id attribute creating an anchor link to a 
+                specific part of the page isn't working as expected. I haven't yet found out the 
+                reason behind it.
+            </em>
         </p>
           
         <address>
